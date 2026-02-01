@@ -1,0 +1,153 @@
+/* COLOR VARIABLES */
+:root {
+  --bg-main: #ede9dd;
+  --text-main: #544013;
+  --accent-main: #c85e14;
+  --accent-soft: #9fd0bb;
+}
+
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Glacial Indifference', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* HEADER */
+.site-header {
+  background: var(--bg-main);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-height: 55px;
+}
+
+/* NAV */
+.main-nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: var(--accent-main);
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: var(--accent-main);
+  color: #fff !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background: #b25012;
+}
+
+.btn-secondary {
+  border: 2px solid var(--accent-soft);
+  color: var(--text-main);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  margin-left: 1rem;
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("https://raw.githubusercontent.com/epitomeedu/epitome-escape/78d154d0363716a42bee19377e7308f74a41f252/20221008_153549-01.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* CONTENT */
+.content-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.content-section h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--accent-main);
+  margin-bottom: 1rem;
+}
+
+.content-section.alt {
+  background: #f4f1e9;
+  padding: 4rem 2rem;
+}
+
+.amenities {
+  list-style: none;
+  columns: 2;
+  gap: 2rem;
+}
+
+.amenities li {
+  margin-bottom: 0.75rem;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--accent-soft);
+}
+
+.cta h2 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
