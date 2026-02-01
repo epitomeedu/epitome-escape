@@ -51,14 +51,14 @@ body {
   margin-left: 1.5rem;
   text-decoration: none;
   color: var(--text-main);
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .main-nav a:hover {
   color: var(--accent-main);
 }
 
-/* MOBILE NAV */
+/* MOBILE */
 .nav-toggle {
   display: none;
   font-size: 1.8rem;
@@ -95,7 +95,7 @@ body {
 .hero {
   height: 85vh;
   background:
-    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
     url("https://raw.githubusercontent.com/epitomeedu/epitome-escape/78d154d0363716a42bee19377e7308f74a41f252/20221008_153549-01.jpeg");
   background-size: cover;
   background-position: center;
@@ -107,32 +107,46 @@ body {
 
 .hero-overlay {
   text-align: center;
-}
-
-.hero-title {
-  font-family: 'Glacial Indifference', sans-serif;
-  font-size: 4rem;
-  font-weight: normal;
-  color: var(--accent-soft);
-  text-transform: lowercase;
-  margin-bottom: 1rem;
-}
-
-.hero-subtitle {
-  font-family: 'Glacial Indifference', sans-serif;
-  font-size: 1.2rem;
-  font-weight: normal;
   color: #fff;
-  text-transform: lowercase;
-  letter-spacing: 1px;
 }
 
-/* HIDE HERO BUTTONS */
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+}
+
 .hero-buttons {
-  display: none;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* FLOATING RESERVE BUTTON */
+/* BUTTONS */
+.btn-clear {
+  background: transparent;
+  border: 2px solid #fff;
+  color: var(--accent-soft); /* seafoam */
+  padding: 0.75rem 1.4rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-clear:hover {
+  background: rgba(159, 208, 187, 0.2);
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 2px solid var(--accent-soft);
+  color: #fff;
+  padding: 0.75rem 1.4rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* FLOATING RESERVE */
 .floating-reserve {
   position: fixed;
   bottom: 20px;
@@ -140,10 +154,10 @@ body {
   background: transparent;
   border: 2px solid #fff;
   color: var(--accent-soft);
-  padding: 0.75rem 1.2rem;
-  border-radius: 4px;
+  padding: 0.8rem 1.4rem;
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 600;
   z-index: 2000;
 }
 
@@ -160,9 +174,8 @@ body {
 }
 
 .content-section h2 {
-  font-family: 'Glacial Indifference', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--accent-main);
-  font-weight: normal;
   margin-bottom: 1rem;
 }
 
@@ -188,20 +201,6 @@ body {
   background: var(--accent-soft);
 }
 
-.cta a {
-  text-decoration: none;
-  border: 2px solid #fff;
-  padding: 0.75rem 1.2rem;
-  color: var(--accent-soft);
-  font-weight: normal;
-  border-radius: 4px;
-}
-
-.cta a:hover {
-  background: rgba(159,208,187,0.2);
-  color: #fff;
-}
-
 /* FOOTER */
 .site-footer {
   text-align: center;
@@ -219,7 +218,7 @@ body {
     display: block;
   }
 
-  .hero-title {
+  .hero h1 {
     font-size: 2.5rem;
   }
 }
