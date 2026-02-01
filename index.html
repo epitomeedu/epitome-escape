@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epitome Escape | Riverfront RV Park</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<!-- FLOATING RESERVE BUTTON -->
+<a href="#reserve" class="floating-reserve">Reserve Now</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/epitomeedu/epitome-escape/46ecd09c44d88a537c29fad4d80d30a5b2ddef7a/4282.jpg" alt="Epitome Escape">
+    </div>
+
+    <nav class="main-nav">
+      <a href="#tour">Tour the Park</a>
+      <a href="#visit">Plan a Visit</a>
+      <a href="#reserve" class="btn-primary">Reserve</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- MOBILE TOGGLE -->
+    <button class="nav-toggle" aria-label="Open Menu">☰</button>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav">
+  <a href="#tour">Tour the Park</a>
+  <a href="#visit">Plan a Visit</a>
+  <a href="#reserve">Reserve</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Epitome Escape</h1>
+    <p>Your Riverfront RV Escape</p>
+
+    <div class="hero-buttons">
+      <a href="#reserve" class="btn-primary btn-clear">Reserve Now</a>
+      <a href="#tour" class="btn-secondary">Explore the Park</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="content-section" id="tour">
+  <h2>Welcome to Epitome Escape</h2>
+  <p>
+    Nestled along the river in the most perfect border town in northern Maine. 
+    Epitome Escape offers peaceful, scenic RV sites is
+      designed for rest, exploration, and connection with nature. Whether you’re
+      passing through or staying awhile, this is where the road slows down.
+  </p>
+</section>
+
+<section class="content-section alt">
+  <h2>Amenities</h2>
+  <ul class="amenities">
+    <li>Riverfront Sites</li>
+   <li>Completely Private Sites</li>
+    <li>Spacious Pull-Throughs</li>
+    <li>Fire Pits</li>
+    <li>Fishing & Kayaking</li>
+    <li>Quiet Hours</li>
+  </ul>
+</section>
+
+<section class="cta" id="reserve">
+  <h2>Ready to Escape?</h2>
+  <p>Reserve your riverfront site today.</p>
+  <a href="#" class="btn-primary">Check Availability</a>
+</section>
+
+<footer class="site-footer" id="contact">
+  <p>© 2026 Epitome Escape • Riverfront RV Park</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+
+  toggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
